@@ -13,4 +13,4 @@ Dossiers :
       | /Style/               - SCSS/CSS
           | /Font/            - Polices d'écriture
           | /Header/          - Style du Header
-          | /Login            - Style du Login
+          | /Login/           - Style du Login
