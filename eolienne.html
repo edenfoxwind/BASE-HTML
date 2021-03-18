@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
 
-    <title>Title</title>
+    <title>Eolienne</title>
     <script src="https://kit.fontawesome.com/c9816946cc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="./resources/Style/common.css" rel="stylesheet">
-    <link href="./resources/Style/accueil/accueil.css" rel="stylesheet">
+    <link href="./Resources/Style/common.css" rel="stylesheet">
+    <link href="./Resources/Style/Eolienne/eol.css" rel="stylesheet">
 
 </head>
 <body>
@@ -19,7 +19,7 @@
 <header>
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#">
-            <img id="logo" src="./resources/Image/logo.png" alt="Logo de fox wind">
+            <img id="logo" src="./Resources/Image/logo.png" alt="Logo de fox wind">
             Fox Wind
         </a>
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,129 +78,40 @@
     </svg>
 </header>
 
-<img id="rightDecoration" src="./resources/Image/right.svg" alt="">
+<img src="./Resources/Image/rightWindDeco.svg" alt="" id="rightDecoration">
 
-<section id="presentation">
+<section id="firstSec">
     <div class="left">
-        <h1>Éclairons notre prochain </h1>
-        <p>Une éolienne construite seulement avec des matériaux recyclés, elle est la plus propre du marché !</p>
-        <button class="full-button-green">More</button>
+        <p class="help">
+            En cette période nous faisons notre maximum pour faciliter votre achat
+        </p>
     </div>
     <div class="right">
-        <img src="./resources/Image/home.svg" draggable="false" alt="">
+        <img src="./Resources/Image/RightPicture.svg" alt=""/>
     </div>
-    <span class="rond rond-clair" id="rondPres"></span>
-    <span class="square square-fonce" id="squarePres"></span>
+    <span class="square square-clair" id="squareClaire"></span>
+    <span class="square square-fonce" id="squareFonce"></span>
     <span class="rond-inv" id="rondInv1"></span>
     <span class="rond-inv" id="rondInv2"></span>
+
 </section>
 
-<section id="steps">
-    <h2 class="decoration-title">Nous nous occupons de toutes les Étapes</h2>
-    <div id="allCards">
-        <div class="card">
-            <img src="./resources/Image/mind.svg" alt="">
-            <p class="stepsDesc">Réflexion</p>
-        </div>
-        <div class="card">
-            <img src="./resources/Image/engineer.svg" alt="">
-            <p class="stepsDesc">Ingénierie </p>
-        </div>
-        <div class="card">
-            <img src="./resources/Image/tools.svg" alt="">
-            <p class="stepsDesc">Contruction</p>
-        </div>
-        <div class="card">
-            <img src="./resources/Image/delivery.svg" alt="">
-            <p class="stepsDesc">Livraison</p>
-        </div>
+<section id="secondSec">
+    <div class="left">
+        <img src="./Resources/Image/windTurbineDeco.svg" alt=""/>
     </div>
-</section>
-
-<section id="advantages">
-    <h2 class="decoration-title">Découvrez les avantages</h2>
-
-    <div>
-        <div class="left">
-            <div class="advElem">
-                <div><img src="./resources/Image/wind.svg" alt=""></div>
-                <div><h3>Energie naturelle </h3>
-                <p>Utilisez le vent pour vous fournir en électricité ou recharger vos batteries.</p></div>
-            </div>
-            <div class="advElem">
-                <div><img src="./resources/Image/mountain.svg" alt=""></div>
-                <div><h3>Simple d'utilisation </h3>
-                <p>Grace à la taille et le poids de l'éolienne vous pouvez l'utiliser où vous voulez. </p></div>
-            </div>
-            <div class="advElem">
-                <div><img src="./resources/Image/trash.svg" alt=""></div>
-                <div><h3>Entièrement recyclée </h3>
-                <p>Profitez d'une éolienne entièrement faite en matériaux recyclés. </p></div>
-            </div>
-        </div>
-        <div class="right">
-            <img src="./resources/Image/windmill.svg" alt="">
-        </div>
+    <div class="right">
+        
     </div>
-    <span class="rond rond-fonce" id="rondAdvantage1"></span>
-    <span class="rond rond-fonce" id="rondAdvantage2"></span>
-    <span class="square square-fonce" id="squareAdvantage1"></span>
-    <span class="square square-fonce" id="squareAdvantage2"></span>
-    <span class="rond-inv" id="rondInvAdvantage1"></span>
-    <span class="rond-inv" id="rondInvAdvantage2"></span>
-</section>
+    <span class="square square-clair" id="squareClaire"></span>
+    <span class="square square-fonce" id="squareFonce"></span>
+    <span class="rond-inv" id="rondInv1"></span>
+    <span class="rond-inv" id="rondInv2"></span>
 
-<section id="donation">
-    <img src="./resources/Image/rocket.svg" alt="">
-    <h2>Décollez avec nous en nous soutenant ! </h2>
-    <button class="full-button-white">Faites un don</button>
-    <span class="rond rond-clair" id="rondDon"></span>
-    <span class="square square-clair" id="squareDon"></span>
-</section>
-<section id="why">
-    <h2 class="decoration-title-center">Pourquoi choisir nos éoliennes</h2>
-    <div>
-        <div class="left">
-            <div class="advElem">
-                <img class="icon" src="./resources/Image/light.svg" alt="">
-                <p>Longue utilisation </p>
-            </div>
-            <div class="advElem">
-                <img class="icon" src="./resources/Image/dollar.svg" alt="">
-                <p>Réduction des couts </p>
-            </div>
-            <div class="advElem">
-                <img class="icon" src="./resources/Image/energy.svg" alt="">
-                <p>Energie réutilisable</p>
-            </div>
-        </div>
-
-        <div class="center">
-            <img src="./resources/Image/earth.svg" alt="">
-        </div>
-
-        <div class="right">
-            <div class="advElem">
-                <p>Multiples utilisations </p>
-                <img class="icon" src="./resources/Image/battery.svg" alt="">
-            </div>
-            <div class="advElem">
-                <p>Energie propre </p>
-                <img class="icon" src="./resources/Image/windP.svg" alt="">
-            </div>
-            <div class="advElem">
-                <p>Simple d'installation</p>
-                <img class="icon" src="./resources/Image/hand.svg" alt="">
-            </div>
-        </div>
-    </div>
-    <img class="leftDecoration" src="./resources/Image/Left%20decoration.svg" alt="">
-    <img class="rightDecoration" src="./resources/Image/Right%20decoration.svg" alt="">
-    <span class="square square-fonce" id="squareWhy"></span>
 </section>
 
 <footer>
-    <img src="./resources/Image/footer.svg" alt="">
+    <img src="./Resources/Image/footer.svg" alt="">
     <section id="footer">
         <div class="container">
             <div class="row">
@@ -223,7 +134,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4 right">
-                    <h2>resources</h2>
+                    <h2>Ressources</h2>
                     <ul>
                         <li><a href="https://www.flaticon.com/">Flaticon</a></li>
                         <li><a href="https://fr.freepik.com/">Freepik</a></li>
