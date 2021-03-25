@@ -28,7 +28,7 @@ section{
         min-width: 450px;
         margin: auto 0;
         h1::after{
-            content: url("../../Image/handWH.svg");
+            content: url("../../image/handWH.svg");
         }
     }
     h1{
@@ -186,7 +186,7 @@ section{
     position: relative;
     //background-color: green;
     z-index:1;
-    background-image: url("../../Image/fond.svg");
+    background-image: url("../../image/fond.svg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -295,7 +295,7 @@ section{
     position: relative;
 }
 .decoration-title::after{
-    content: url("../../Image/wave.svg");
+    content: url("../../image/wave.svg");
     position: absolute;
     top: 25px;
     left: 0;
@@ -305,7 +305,7 @@ section{
     position: relative;
 }
 .decoration-title-center::after{
-    content: url("../../Image/wave.svg");
+    content: url("../../image/wave.svg");
     position: absolute;
     top: 25px;
     left: 50%;
