@@ -55,12 +55,26 @@ nav{
     }
 }
 
+@media screen and (max-width:900px){
+    nav{
+        div.navbar-collapse{
+            position: absolute;
+        }
+        a.nav-link{
+            font-size: 16px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+
 @media screen and (max-width: 767px){
     nav {
         background: rgb(125,143,65);
         background: linear-gradient(180deg, rgba(40,54,24,1) 0%, rgb(65, 80, 36) 40%, rgba(125,143,65,1) 100%);
         li.separator{
             display: flex;
+            margin: 5px auto;
         }
         div.navbar-collapse{
             position: relative;
@@ -68,6 +82,9 @@ nav{
         }
         a.nav-link.animation:hover::after{
             width: 0;
+        }
+        li.none-res{
+            display: none;
         }
     }
     #bottom-nav{

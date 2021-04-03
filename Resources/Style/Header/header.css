@@ -54,6 +54,17 @@ nav li.nav-item {
   }
 }
 
+@media screen and (max-width: 900px) {
+  nav div.navbar-collapse {
+    position: absolute;
+  }
+  nav a.nav-link {
+    font-size: 16px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   nav {
     background: #7d8f41;
@@ -64,6 +75,7 @@ nav li.nav-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 5px auto;
   }
   nav div.navbar-collapse {
     position: relative;
@@ -71,6 +83,9 @@ nav li.nav-item {
   }
   nav a.nav-link.animation:hover::after {
     width: 0;
+  }
+  nav li.none-res {
+    display: none;
   }
   #bottom-nav {
     display: block;

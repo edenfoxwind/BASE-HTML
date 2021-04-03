@@ -38,7 +38,11 @@ section {
   width: 50%;
 }
 
-#firstSec .right img {
+#firstSec .right div {
+  width: 100%;
+}
+
+#firstSec .right div img {
   width: 100%;
 }
 
@@ -77,12 +81,244 @@ section {
 }
 
 #secondSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
   padding: 150px 0;
 }
 
 #secondSec .left {
   background-image: url("../../Image/leftMiddle.svg");
   background-repeat: no-repeat;
-  padding: 100px 50px 450px;
+  width: 50%;
+  background-size: contain;
+  min-width: 432px;
+  padding: 150px 10px 150px 50px;
+}
+
+#secondSec .left img {
+  width: 80%;
+}
+
+#secondSec .left #rondInvSecondSec1 {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  left: 33%;
+  top: 240px;
+  z-index: 10;
+}
+
+#secondSec .left #rondInvSecondSec2 {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  left: 31%;
+  bottom: 200px;
+  z-index: 10;
+}
+
+#secondSec .right {
+  min-width: 540px;
+  width: 50%;
+  margin: auto 0;
+  position: relative;
+}
+
+#secondSec .right .advElem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#secondSec .right p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#secondSec .right #rondInvSecondSec3 {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+}
+
+#secondSec #rondClaire {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  z-index: 10;
+}
+
+#secondSec #rondFonce {
+  position: absolute;
+  right: 300px;
+  z-index: 10;
+}
+
+#thirdSec {
+  padding: 80px;
+}
+
+#thirdSec #buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 25px;
+  background: #774418;
+  background: -webkit-gradient(linear, left top, right top, from(#774418), to(#3c220c));
+  background: linear-gradient(90deg, #774418 0%, #3c220c 100%);
+  width: 100%;
+  border-radius: 50px;
+}
+
+#thirdSec #buy #eolImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#thirdSec #buy #eolImages .eolContainer {
+  cursor: pointer;
+  border-radius: 25px;
+  position: relative;
+  padding: 20px;
+  background: #d9b799;
+  background: linear-gradient(311deg, rgba(217, 183, 153, 0.36) 36%, rgba(60, 34, 12, 0.36) 100%);
+  width: 180px;
+  width: 187px;
+  height: 187px;
+  margin: 12px;
+}
+
+#thirdSec #buy #eolImages .eolContainer img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#thirdSec #buy #bigEolImage {
+  margin: auto 0;
+}
+
+#thirdSec #buy #bigEolImage img {
+  width: 450px;
+  height: 450px;
+}
+
+.dark-footer {
+  background: #774418;
+  background: -webkit-gradient(linear, left top, left bottom, from(#774418), to(#3c220c));
+  background: linear-gradient(180deg, #774418 0%, #3c220c 100%);
+}
+
+@media screen and (max-width: 1100px) {
+  #firstSec {
+    padding: 100px 40px 100px;
+  }
+  #firstSec .square {
+    display: none;
+  }
+  #firstSec .rond-inv {
+    display: none;
+  }
+  #firstSec .right {
+    position: relative;
+  }
+  #firstSec .right img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #secondSec {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #secondSec .left {
+    background-image: none;
+    padding: 0;
+    width: 40%;
+  }
+  #secondSec .left img {
+    width: 100%;
+  }
+  #secondSec .rond, #secondSec .rond-inv {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rightDecoration {
+    display: none;
+  }
+  #firstSec {
+    padding: 5px 5%;
+  }
+  #firstSec .left .help {
+    font-size: 25px;
+  }
+  #firstSec .left, #firstSec .right {
+    width: 90%;
+  }
+  #firstSec .right {
+    position: relative;
+  }
+  #firstSec .right img {
+    position: relative;
+  }
+  #secondSec .right, #secondSec .left {
+    width: 100%;
+    min-width: 0;
+  }
+  #secondSec .left {
+    width: 80%;
+  }
+  #secondSec .right .advElem {
+    padding: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #secondSec .right .advElem p {
+    font-size: 20px;
+  }
+  #secondSec .right .advElem h3 {
+    font-size: 30px;
+  }
+  #secondSec .right .advElem img {
+    width: 100px;
+  }
 }
 /*# sourceMappingURL=eol.css.map */

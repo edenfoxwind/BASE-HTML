@@ -30,8 +30,11 @@ section{
     }
     .right{
         width: 50%;
-        img{
+        div{ 
             width: 100%;
+            img{
+                width: 100%;
+            }
         }
     }
 
@@ -66,10 +69,220 @@ section{
 }
 
 #secondSec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
     padding: 150px 0;
     .left{
         background-image: url("../../Image/leftMiddle.svg");
         background-repeat: no-repeat;
-        padding: 100px 50px 450px;
+        width: 50%;
+        background-size: contain;
+        min-width: 432px;
+        padding: 150px 10px 150px 50px;
+        img{
+            width: 80%;
+        }
+
+        #rondInvSecondSec1{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 33%;
+            top: 240px;
+            z-index: 10;
+        }
+        #rondInvSecondSec2{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 31%;
+            bottom: 200px;
+            z-index: 10;
+        }
+
     }
+    .right{
+        min-width: 540px;
+        width: 50%;
+        margin: auto 0;
+        position: relative;
+        .advElem{
+            display: flex;
+            flex-direction: row;
+        }
+        p{
+            color: rgba($color: #000000, $alpha: 0.5);
+        }
+        #rondInvSecondSec3{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            bottom: 20%;
+            right: 0;
+        }
+    }
+    #rondClaire{
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        z-index: 10;
+    }
+
+    #rondFonce{
+        position: absolute;
+        right: 300px;
+        z-index: 10;
+    }
+}
+
+#thirdSec{
+    padding: 80px;
+    #buy{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 25px;
+        background: $MarronSecondaire1;
+        background: linear-gradient(90deg, $MarronSecondaire1 0%, rgba(60,34,12,1) 100%);
+        width: 100%;
+        border-radius: 50px;
+        #eolImages{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            .eolContainer{
+                cursor: pointer;
+                border-radius: 25px;
+                position:relative;
+                padding: 20px;
+                background: rgb(217,183,153);
+                background: linear-gradient(311deg, rgba(217,183,153,0.36) 36%, rgba(60,34,12,0.36) 100%);
+                width: 180px;
+                width: 187px;
+                height: 187px;
+                margin: 12px;
+
+                img{
+                    position:absolute;
+                    top: 0; bottom: 0; left: 0; right: 0;
+                    margin: auto;
+                }
+            }
+
+        }
+        #bigEolImage{
+            margin: auto 0;
+            img{
+                width: 450px;
+                height: 450px;
+            }
+        }
+        #eolDescription{
+            
+        }
+    }
+}
+
+
+
+
+.dark-footer{
+    background: $MarronSecondaire1;
+    background: linear-gradient(180deg,  $MarronSecondaire1 0%, rgba(60,34,12,1) 100%);
+    }
+
+@media screen and (max-width:1100px){
+    #firstSec{
+        padding: 100px 40px 100px;
+        .square{
+            display: none;
+        }
+        .rond-inv{
+            display: none;
+        }
+        .right{
+            position:relative;
+            img{
+                position:absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                margin: auto;
+            }
+        }
+    }
+
+    #secondSec{
+        flex-direction: row;
+        .left{
+            background-image: none;
+            padding: 0;
+            width: 40%;
+            img{
+                width: 100%;
+            }
+        }
+        
+        .rond, .rond-inv{
+            display: none;     
+        }
+    
+    }
+}
+
+
+@media screen and (max-width: 767px){
+
+    #rightDecoration{
+        display: none;
+    }
+
+    #firstSec{
+        padding: 5px 5%;
+        .left{
+            .help{
+                font-size: 25px;
+            }
+        }
+        .left, .right{
+            width: 90%;
+        }
+        .right{
+            position:relative;
+            img{
+                position:relative;
+            }
+        }
+
+    }
+
+    #secondSec{
+        .right, .left{
+            width: 100%;
+            min-width: 0;
+        }
+        .left{
+            width: 80%;
+        }
+        .right{
+            .advElem{
+                padding: 5px;
+                flex-direction: column;
+                p{
+                    font-size: 20px;
+                }
+                h3{
+                    font-size: 30px;
+                }
+                img{
+                    width: 100px ;
+                }
+            }
+        }
+
+    }
+
+
+
 }
