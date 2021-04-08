@@ -1,3 +1,4 @@
+/* Variable */
 footer {
   text-align: center;
 }
@@ -45,6 +46,12 @@ footer .center {
 
 footer .col-md-4 {
   border-bottom: solid 1px white;
+}
+
+.dark-footer {
+  background: #774418;
+  background: -webkit-gradient(linear, left top, left bottom, from(#774418), to(#3c220c));
+  background: linear-gradient(180deg, #774418 0%, #3c220c 100%);
 }
 
 @media screen and (max-width: 1300px) {

@@ -137,19 +137,52 @@
             <div class="eolContainer">
                 <img src="./Resources/Image/eol1.svg">
             </div>
+            <div class="break"></div>
             <div class="eolContainer">
                 <img src="./Resources/Image/eol1.svg">
             </div>
             <div class="eolContainer">
                 <img src="./Resources/Image/eol1.svg">
             </div>
+            <span class="rond rond-clair" id="rondClaireBuy"></span>
+
         </div>
         <div id="bigEolImage">
             <img src="./Resources/Image/eol1.svg">
         </div>
         <div id="eolDescription">
-            
+            <h2>Éolienne <span class="price">666€</span></h2>
+            <div class="star-container">
+                <div class="note">5.0</div>
+                <div class="star fill"></div>
+                <div class="star fill"></div>
+                <div class="star fill"></div>
+                <div class="star fill"></div>
+                <div class="star"></div>
+            </div> 
+            <p class="advice">
+                10 Avis | Ajouter votre avis
+            </p>
+            <p class="desc">
+                This is Photoshop's version of Lorem Ipsum. 
+                Proin kdagravida nibh vel velit auctor aliquet. 
+                aks Aenean sollicitudin, lorem quis bibendum 
+                auctor, nisi elit consequat ipsum kda, nec sagittis
+                sem nibh id elit. Duis sed odio sit amet is life.
+            </p>
+            <form action="./" method="POST">
+                <p class="number">
+                    <span class="left-number">-</span>
+                    <input type="number" name="qte" id="qte" min="1" value="1">
+                    <span class="right-number">+</span>
+                </p>
+                <button class="add-to-cart"><img src="./Resources/Image/cart.svg"/>Ajout au panier </button>
+            </form>
+            <span class="square square-clair" id="squareClaireBuy"></span>
         </div>
+        <span class="rond-inv" id="rondInvThirdSec1"></span>
+        <span class="rond-inv" id="rondInvThirdSec2"></span>
+        <span class="rond-inv" id="rondInvThirdSec3"></span>
     </div>
 </section>
 
@@ -188,5 +221,33 @@
         <p class="copyright">Copyright 2020-2021 FoxWind | All Right Reserved</p>
     </section>
 </footer>
+<script>
+    let eolContainer = document.getElementsByClassName("eolContainer");
+    let bigEol = document.getElementById("bigEolImage").getElementsByTagName("img")[0];
+    let less = document.getElementsByClassName("left-number")[0];
+    let more = document.getElementsByClassName("right-number")[0];
+    let qte = document.getElementById("qte");
+    less.addEventListener("click",function() {
+        change(-1)
+    });
+    more.addEventListener("click",function() {
+        change(1)
+    });
+
+    for (let i = 0; i < eolContainer.length; i++) {
+        const container = eolContainer[i];
+        container.addEventListener("click",function() {
+            bigEol.setAttribute("src",container.getElementsByTagName("img")[0].getAttribute("src"))
+        });
+    }
+
+    function change(value) {
+        let newValue = parseInt(qte.value)+value;
+        if(newValue >= qte.getAttribute("min"))
+            qte.value = newValue;
+
+        
+    }
+</script>
 </body>
 </html>
