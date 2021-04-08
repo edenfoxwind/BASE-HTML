@@ -1,3 +1,4 @@
+/* Imports */
 /* Fonts */
 @font-face {
   font-family: "Lato Light";
@@ -28,12 +29,7 @@
   src: url("../Font/Montserrat-Bold.ttf");
 }
 /* Fonts */
-/* Body - Main */
-body {
-  overflow: hidden;
-}
-
-/* Body - Main */
+/* Imports */
 /* SVG Forms */
 .topRight {
   width: 25%;
@@ -48,21 +44,80 @@ body {
 .topRight img:nth-child(1) {
   top: 0;
   width: 50%;
-  z-index: -1;
+  z-index: -99;
 }
 .topRight img:nth-child(2) {
   top: -50px;
-  width: 45%;
-  z-index: 1;
+  width: 44%;
+  z-index: -98;
 }
 
 .bottomLeftFormSVG {
-  width: 800px;
-  position: absolute;
-  z-index: 1;
-  bottom: -150px;
-  left: -200px;
+  bottom: 0px;
+  position: fixed;
+  z-index: -100;
+  left: -100px;
   pointer-events: none;
+}
+
+.rond-trans {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  z-index: 100 !important;
+  position: absolute;
+}
+
+.rond {
+  position: absolute;
+}
+
+.square {
+  position: absolute;
+}
+
+#carre01 {
+  z-index: 100;
+  left: 60px;
+  top: 175px;
+  transform: rotate(45deg);
+}
+
+#carre02 {
+  z-index: 100;
+  right: 80px;
+  bottom: 50px;
+  transform: rotate(50deg);
+}
+
+#carre03 {
+  z-index: 100;
+  right: 150px;
+  top: 250px;
+  transform: rotate(47deg);
+}
+
+#rond01 {
+  z-index: 100;
+  left: 40px;
+  bottom: 100px;
+}
+
+#rond02 {
+  z-index: -100;
+  right: 800px;
+  bottom: 15px;
+}
+
+#rondForm01 {
+  right: -150px;
+  bottom: 40px;
+}
+
+#rondForm02 {
+  left: -50px;
+  top: 10px;
+  opacity: 0.1;
 }
 
 /* SVG Forms */
@@ -73,6 +128,7 @@ body {
   display: flex;
   justify-content: center;
   box-shadow: 10px 10px 0px 0px rgba(119, 68, 24, 0.4);
+  width: 100px;
   /* Titre du formulaire */
   /* Titre du formulaire */
   /* Inputs du formulaire */
@@ -130,6 +186,40 @@ body {
   color: white;
   text-decoration: underline;
   padding-bottom: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: #774418;
+  }
+
+  /* Desactive les formes */
+  .topRight img {
+    display: none;
+  }
+
+  .rond-trans, .square, .rond {
+    display: none;
+  }
+
+  /* Desactive les formes */
+  .bottomLeftFormSVG {
+    display: none;
+  }
+
+  .Form {
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 0px;
+  }
+  .Form h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Form h1 {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=register.css.map */
