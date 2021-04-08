@@ -20,7 +20,6 @@
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#">
             <img id="logo" src="resources/image/logo.png" alt="Logo de fox wind">
-            Fox Wind
         </a>
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -84,7 +83,7 @@
     <div class="left">
         <h1>Éclairons notre prochain </h1>
         <p>Une éolienne construite seulement avec des matériaux recyclés, elle est la plus propre du marché !</p>
-        <button class="full-button-green">More</button>
+        <button class="full-button-green" aria-label="En savoir plus sur nos éoliennes">En savoir plus</button>
     </div>
     <div class="right">
         <img src="resources/image/home.svg" draggable="false" alt="">
@@ -200,7 +199,21 @@
 </section>
 
 <footer>
-    <img src="resources/image/footer.svg" alt="">
+    <!--Waves Start-->
+    <div>
+        <svg class="waves"  viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use href="#wave" x="48" y="0" fill="rgba(82,92,48,0.7" />
+                <use href="#wave" x="48" y="3" fill="rgba(82,92,48,0.5)" />
+                <use href="#wave" x="48" y="5" fill="rgba(82,92,48,0.3)" />
+                <use href="#wave" x="48" y="7" fill="#525C30" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves end-->
     <section id="footer">
         <div class="container">
             <div class="row">
