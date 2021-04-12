@@ -1,0 +1,132 @@
+/* Variable */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+p {
+  color: white;
+}
+
+#rightDecoration {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  z-index: -10;
+  width: 65%;
+}
+
+#firstSec {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+#firstSec .left {
+  width: 40%;
+}
+
+#firstSec .left img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#firstSec .right {
+  width: 40%;
+}
+
+#firstSec .right * {
+  color: white;
+}
+
+.right-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#7d8f41), color-stop(90%, #606c38));
+  background: linear-gradient(90deg, #7d8f41 0%, #606c38 90%);
+}
+
+.right-image .left {
+  min-width: 320px;
+  width: 50%;
+}
+
+.right-image .left p {
+  padding: 25px 0;
+}
+
+.right-image .right {
+  min-width: 320px;
+  width: 40%;
+}
+
+.right-image .right img {
+  width: 100%;
+}
+
+.left-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+  background: -webkit-gradient(linear, right top, left top, from(#7d8f41), color-stop(90%, #606c38));
+  background: linear-gradient(270deg, #7d8f41 0%, #606c38 90%);
+}
+
+.left-image .left {
+  min-width: 320px;
+  width: 40%;
+}
+
+.left-image .left img {
+  width: 100%;
+}
+
+.left-image .right {
+  min-width: 320px;
+  width: 50%;
+}
+
+.left-image .right p {
+  padding: 25px 0;
+}
+
+.full-image {
+  padding: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#7d8f41), color-stop(90%, #606c38));
+  background: linear-gradient(90deg, #7d8f41 0%, #606c38 90%);
+}
+
+.full-image div {
+  width: 100%;
+}
+
+.full-image div * {
+  padding: 25px;
+}
+
+.full-image div img {
+  width: 100%;
+}
+
+.full-image div p {
+  width: 100%;
+}
+/*# sourceMappingURL=blog.css.map */

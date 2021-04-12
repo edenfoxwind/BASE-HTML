@@ -1,0 +1,99 @@
+@import "../variable.scss";
+body{
+    margin: 0;
+    overflow-x:hidden;
+}
+
+p{
+    color: white;
+}
+
+#rightDecoration{
+    position: absolute;
+    right: 0;
+    top: -1px;
+    z-index: -10;
+    width: 65%;
+}
+
+#firstSec{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    .left{
+        width: 40%;
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .right{
+        *{
+            color: white;
+        }
+        width: 40%;
+    }
+}
+
+.right-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding : 50px;
+    background: linear-gradient(90deg, rgba(125,143,65,1) 0%, rgba(96,108,56,1) 90%);
+    .left{
+        min-width: 320px;
+        width: 50%;
+        p{
+            padding: 25px 0;
+        }
+    }
+    .right{
+        min-width: 320px;
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.left-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding : 50px;
+    background: linear-gradient(270deg, rgba(125,143,65,1) 0%, rgba(96,108,56,1) 90%);
+    .left{
+        min-width: 320px;
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+    .right{
+        min-width: 320px;
+        width: 50%;
+        p{
+            padding: 25px 0;
+        }
+    }
+}
+
+.full-image{
+    padding : 50px;
+    background: linear-gradient(90deg, rgba(125,143,65,1) 0%, rgba(96,108,56,1) 90%);
+    div{
+        *{
+            padding: 25px;
+        }
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+        }
+    }
+}
