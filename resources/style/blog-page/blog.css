@@ -17,6 +17,7 @@ p {
 }
 
 #firstSec {
+  position: relative;
   padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,6 +27,14 @@ p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 200px;
+}
+
+#firstSec #squareClairArticle {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 #firstSec .left {
@@ -211,7 +220,7 @@ p {
 }
 
 #comments .comment p {
-  width: 80%;
+  width: 100%;
   color: gray;
   margin: 0;
   font-size: 22px;
@@ -219,7 +228,7 @@ p {
 
 #comments .separator {
   margin: 30px 0;
-  width: 80%;
+  width: 100%;
   height: 1px;
   display: block;
   background-color: #606C38;
@@ -228,6 +237,9 @@ p {
 @media screen and (max-width: 1100px) {
   #rightDecoration {
     width: 75%;
+  }
+  #comments .comment p, #comments .separator {
+    width: 80%;
   }
 }
 
