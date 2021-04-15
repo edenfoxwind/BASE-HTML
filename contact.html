@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-
+    <meta name="description" content="Vous voulez nous contacter ? Vous êtes au bon endroit !">
     <title>Title</title>
     <script src="https://kit.fontawesome.com/c9816946cc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -84,8 +84,18 @@
         <h1>Nous contacter</h1>
     </div>
     <div class="right">
-        <img src="./resources/image/rightImgContact.svg"/>
+        <img src="./resources/image/rightImgContact.svg" alt=""/>
     </div>
+</section>
+
+<section id="contact">
+    <h2 class="decoration-title">Formulaire de contact<img src="./resources/image/com.svg" alt=""/> </h2>
+    <form action="/contact" method="post">
+        <input required type="email" name="mail" placeholder="Votre E-mail"/>
+        <input required type="text" name="who" placeholder="Qui êtes vous(Client,association etc.)"/>
+        <textarea required name="content"></textarea>
+        <button class="button-white">Envoyer</button>
+    </form>
 </section>
 
 <footer>

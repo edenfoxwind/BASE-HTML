@@ -1,3 +1,5 @@
+@import "../variable.scss";
+
 #rightDecoContact{
     position: absolute;
     right: 0;
@@ -10,7 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 30vw;
     .left, .right{
         width: 40%;
         margin: auto 0;
@@ -21,12 +23,63 @@
     }
 }
 
+#contact{
+    padding: 0 50px;
+    img{
+        vertical-align: middle;
+        margin-left: 25px;
+    }
+    form{
+        *{
+            display: block;
+            margin : 10px 0 ;
+            padding : 5px 15px;
+            border-radius : 3px;
+            border : solid 1px lightgray;
+            transition: 0.2s;
+        }
+        *:focus{
+            outline: none;
+        }
+        textarea{
+            padding: 5px;
+            width: 80%;
+            min-height: 150px;
+            resize: none;
+        }
+    }
+    .button-white{
+        border: solid 1px $VertPrincipale1;
+        background-color: transparent;
+        transition: 0.2s;
+        padding: 5px 15px;
+        border-radius: 50px;
+    }
+    .button-white:hover{
+        border : solid 1px lightgray;
+        background-color : $VertPrincipale1;
+        color : white;
+    }
+}
+.decoration-title{
+    position: relative;
+}
+.decoration-title::after{
+    content: url("../../image/wave.svg");
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
 
 @media screen and (max-width:767px) {
+    .decoration-title::after{
+        content: none;
+    }
     #rightDecoContact{
         display: none;
     }
     #contactFirstSec{
+        margin-bottom: 50px;
         .left,.right{
             width: 90%;
             text-align: center;
@@ -34,6 +87,17 @@
         }
         h1{
             font-size: 35px;
+        }
+    }
+    #contact{
+        padding: 5px;
+        h2{
+            font-size: 25px;
+        }
+        form{
+            textarea{
+                width: 100%;
+            }
         }
     }
 }
