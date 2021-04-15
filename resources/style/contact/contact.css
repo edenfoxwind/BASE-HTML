@@ -7,6 +7,38 @@
   z-index: -10;
 }
 
+#rondInvContact1, #rondInvContact2, #squareContact1, #squareContact2 {
+  position: absolute;
+}
+
+#rondInvContact1 {
+  width: 300px;
+  height: 300px;
+  left: -150px;
+  top: 40%;
+}
+
+#rondInvContact2 {
+  width: 180px;
+  height: 180px;
+  top: 40%;
+  left: 40%;
+}
+
+#squareContact1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 300px;
+  bottom: 150px;
+}
+
+#squareContact2 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 150px;
+  bottom: 100px;
+}
+
 #contactFirstSec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,6 +117,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  #rondInvContact1, #rondInvContact2, #squareContact1, #squareContact2 {
+    display: none;
+  }
   .decoration-title::after {
     content: none;
   }
