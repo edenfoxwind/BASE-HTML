@@ -1,0 +1,39 @@
+#rightDecoContact{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 75%;
+    z-index: -10;
+}
+
+#contactFirstSec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    .left, .right{
+        width: 40%;
+        margin: auto 0;
+        min-width: 320px;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    #rightDecoContact{
+        display: none;
+    }
+    #contactFirstSec{
+        .left,.right{
+            width: 90%;
+            text-align: center;
+            min-width: 0;
+        }
+        h1{
+            font-size: 35px;
+        }
+    }
+}

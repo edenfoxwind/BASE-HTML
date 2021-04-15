@@ -1,0 +1,43 @@
+#rightDecoContact {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 75%;
+  z-index: -10;
+}
+
+#contactFirstSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+#contactFirstSec .left, #contactFirstSec .right {
+  width: 40%;
+  margin: auto 0;
+  min-width: 320px;
+}
+
+#contactFirstSec img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  #rightDecoContact {
+    display: none;
+  }
+  #contactFirstSec .left, #contactFirstSec .right {
+    width: 90%;
+    text-align: center;
+    min-width: 0;
+  }
+  #contactFirstSec h1 {
+    font-size: 35px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
