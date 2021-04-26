@@ -93,7 +93,7 @@ section {
 }
 
 #secondSec .left {
-  background-image: url("../../Image/leftMiddle.svg");
+  background-image: url("../../image/leftMiddle.svg");
   background-repeat: no-repeat;
   width: 50%;
   background-size: contain;
