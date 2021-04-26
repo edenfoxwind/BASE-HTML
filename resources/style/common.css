@@ -214,7 +214,7 @@ nav li.nav-item div svg {
     width: 350px;
   }
 }
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1059px) {
   nav {
     background: #7d8f41;
     background: linear-gradient(180deg, #283618 0%, #415024 40%, #7d8f41 100%);
@@ -236,6 +236,11 @@ nav li.nav-item div svg {
   nav .navbar-collapse ul {
     margin: 0 !important;
   }
+
+  .HeaderWave {
+    display: block;
+    transform: rotate(0.5turn);
+  }
 }
 @media screen and (max-width: 767px) {
   nav {
@@ -256,11 +261,6 @@ nav li.nav-item div svg {
   }
   nav a.nav-link.animation:hover::after {
     width: 0;
-  }
-
-  .HeaderWave {
-    display: block;
-    transform: rotate(0.5turn);
   }
 }
 ::-webkit-scrollbar {
