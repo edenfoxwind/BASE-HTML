@@ -4,11 +4,19 @@ body {
   overflow-x: hidden;
 }
 
-#rightDecoration {
+.rightDecoration {
   position: absolute;
   right: 0;
   top: -1px;
   z-index: -10;
+}
+
+#rightDecorationDefault {
+  display: block;
+}
+
+#rightDecoration1301 {
+  display: none;
 }
 
 section {
@@ -317,11 +325,25 @@ section {
     text-align: center;
   }
 }
-@media screen and (max-width: 1300px) {
-  #rightDecoration {
+@media screen and (max-width: 1500px) {
+  .rightDecoration {
     right: -490px;
   }
 
+  #rightDecorationDefault {
+    display: none;
+  }
+
+  #rightDecoration1301 {
+    display: block;
+    top: 210px;
+  }
+
+  .navbar {
+    background-color: #7D8F41;
+  }
+}
+@media screen and (max-width: 1300px) {
   section {
     padding: 40px 75px;
   }
@@ -339,6 +361,11 @@ section {
   }
   #advantages .left p {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1059px) {
+  .rightDecoration {
+    display: none !important;
   }
 }
 @media screen and (max-width: 966px) {
@@ -375,7 +402,7 @@ section {
     padding: 40px 5%;
   }
 
-  #rightDecoration {
+  .rightDecoration {
     display: none;
   }
 

@@ -1,50 +1,58 @@
 @import "../variable.scss";
-body{
+
+body {
     margin: 0;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 
-
-#rightDecoration{
+.rightDecoration {
     position: absolute;
     right: 0;
     top: -1px;
     z-index: -10;
 }
-
-
-
-section{
-    padding: 80px 150px;
+#rightDecorationDefault {
+    display: block;
+}
+#rightDecoration1301 {
+    display: none;
 }
 
-#presentation{
+
+section {
+    padding: 80px 150px;
+}
+#presentation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    .left{
-        width: 40% ;
+
+    .left {
+        width: 40%;
         min-width: 450px;
         margin: auto 0;
-        h1::after{
+
+        h1::after {
             content: url("../../image/handWH.svg");
         }
     }
-    h1{
+    h1 {
         font-size: 61px;
     }
-    .right{
+    .right {
         width: 50%;
         min-width: 450px;
-        img{
+
+        img {
             width: 100%;
         }
     }
 
 
     margin-bottom: 150px;
-    #rondInv1{
+
+    #rondInv1 {
         width: 180px;
         height: 180px;
         position: absolute;
@@ -53,7 +61,7 @@ section{
         z-index: -10;
     }
 
-    #rondInv2{
+    #rondInv2 {
         width: 250px;
         height: 250px;
         position: absolute;
@@ -61,13 +69,13 @@ section{
         bottom: 200px;
     }
 
-    #rondPres{
+    #rondPres {
         position: absolute;
         right: 100px;
         bottom: 400px;
     }
 
-    #squarePres{
+    #squarePres {
         position: absolute;
         left: 230px;
         bottom: 200px;
@@ -75,28 +83,30 @@ section{
     }
 }
 
-#steps{
+#steps {
     background-color: #F8F8F8;
-    .card{
-        width: 280px ;
+
+    .card {
+        width: 280px;
         height: 290px;
         align-items: center;
         padding: 50px 25px 25px;
         border-radius: 25px;
-        box-shadow: -7px 7px 10px 5px rgba(0,0,0,0.51);
+        box-shadow: -7px 7px 10px 5px rgba(0, 0, 0, 0.51);
         background-color: white;
         text-align: center;
-        margin:15px 0 ;
+        margin: 15px 0;
 
-        img{
+        img {
             width: 75%;
         }
-        .stepsDesc{
+
+        .stepsDesc {
             color: $VertPrincipale1;
         }
     }
-                 
-    #allCards{
+
+    #allCards {
         margin: 50px 0;
         display: flex;
         flex-wrap: wrap;
@@ -105,87 +115,88 @@ section{
     }
 }
 
-#advantages{
+#advantages {
     position: relative;
-    >div{
+    > div {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
     }
-    h2{
+    h2 {
         margin-bottom: 50px;
     }
-    .left{
+    .left {
         margin: auto 0;
         display: flex;
         flex-direction: column;
         width: 60%;
         min-width: 450px;
-
-        .advElem{
+        .advElem {
             display: flex;
             flex-direction: row;
         }
-
-        p{
+        p {
             font-size: 24px;
             width: 85%;
         }
     }
-    .right{
+    .right {
         width: 40%;
         min-width: 450px;
-        img{
+        img {
             width: 100%;
         }
     }
-    #rondAdvantage1{
+
+    #rondAdvantage1 {
         position: absolute;
         right: 50px;
         top: 150px;
     }
 
-    #rondAdvantage2{
+    #rondAdvantage2 {
         position: absolute;
         left: 500px;
         bottom: 100px;
     }
 
-    #squareAdvantage1{
+    #squareAdvantage1 {
         position: absolute;
         top: 50px;
         left: 50px;
         transform: rotate(20deg);
     }
-    #squareAdvantage2{
+
+    #squareAdvantage2 {
         position: absolute;
         top: 375px;
         left: 55%;
         transform: rotate(20deg);
     }
 
-    #rondInvAdvantage1{
+    #rondInvAdvantage1 {
         position: absolute;
         right: -150px;
         top: -130px;
-        width:300px ;
+        width: 300px;
         height: 300px;
     }
-    #rondInvAdvantage2{
+
+    #rondInvAdvantage2 {
         position: absolute;
         z-index: -10;
         left: 600px;
         bottom: 300px;
-        width: 180px ;
+        width: 180px;
         height: 180px;
     }
 }
 
-#donation{
+#donation {
     position: relative;
     //background-color: green;
-    z-index:1;
+    z-index: 1;
     background-image: url("../../image/fond.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -194,49 +205,57 @@ section{
     flex-direction: row;
     justify-content: space-around;
     color: white;
-    *{
+
+    * {
         margin: auto 0;
-        z-index:10;
+        z-index: 10;
     }
-    img{
+
+    img {
         width: 150px;
     }
-    h2{
+
+    h2 {
         font-family: "Lato Bold";
-        width:730px ;
+        width: 730px;
     }
-    #rondDon{
+
+    #rondDon {
         position: absolute;
         left: 100px;
         bottom: 25px;
     }
-    #squareDon{
+
+    #squareDon {
         position: absolute;
         right: 100px;
         top: 100px;
         transform: rotate(70deg);
     }
-    button{
+
+    button {
         font-size: 32px;
     }
 }
 
-#why{
+#why {
     padding: 80px 75px;
     position: relative;
-    h2{
+
+    h2 {
         text-align: center;
         margin-bottom: 50px;
     }
 
-    >div{
+    > div {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
 
     }
-    .left, .right{
+
+    .left, .right {
         text-align: left;
         margin: auto 0;
         display: flex;
@@ -244,45 +263,50 @@ section{
         width: 30%;
         min-width: 400px;
 
-        .advElem{
+        .advElem {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             margin: 25px 0;
         }
-        p{
+
+        p {
             font-size: 26px;
             font-family: "Montserrat Bold";
             margin: auto 0 auto 0;
             width: 100%;
         }
     }
-    .right{
+
+    .right {
         text-align: right;
     }
-    .center{
+
+    .center {
         width: 40%;
         min-width: 500px;
 
-        img{
+        img {
             width: 100%;
         }
     }
-    .leftDecoration{
+
+    .leftDecoration {
         position: absolute;
         top: 25%;
         left: 0;
-        width: 115px ;
+        width: 115px;
     }
 
-    .rightDecoration{
+    .rightDecoration {
         position: absolute;
         top: 25%;
         right: 0;
-        width: 115px ;
+        width: 115px;
         z-index: -10;
     }
-    #squareWhy{
+
+    #squareWhy {
         position: absolute;
         bottom: 50px;
         left: 40%;
@@ -291,21 +315,22 @@ section{
 }
 
 
-
-.decoration-title{
+.decoration-title {
     position: relative;
 }
-.decoration-title::after{
+
+.decoration-title::after {
     content: url("../../image/wave.svg");
     position: absolute;
     top: 25px;
     left: 0;
 }
 
-.decoration-title-center{
+.decoration-title-center {
     position: relative;
 }
-.decoration-title-center::after{
+
+.decoration-title-center::after {
     content: url("../../image/wave.svg");
     position: absolute;
     top: 25px;
@@ -314,29 +339,32 @@ section{
 }
 
 
-@media screen and (max-width:1504px){
-    #why{
-        .left{
+@media screen and (max-width: 1504px) {
+    #why {
+        .left {
             order: 0;
         }
-        .right{
+
+        .right {
             order: 1;
         }
-        .center{
+
+        .center {
             order: 2;
         }
-        .leftDecoration, .rightDecoration{
+
+        .leftDecoration, .rightDecoration {
             display: none;
         }
     }
 }
 
-@media screen and (max-width:1442px){
-    #advantages>#squareAdvantage2{
+@media screen and (max-width: 1442px) {
+    #advantages > #squareAdvantage2 {
         display: none;
     }
-    #donation{
-        h2{
+    #donation {
+        h2 {
             color: white;
             width: 100%;
             margin: 25px 0;
@@ -344,127 +372,159 @@ section{
         }
     }
 }
-
-@media screen and (max-width:1300px){
-    #rightDecoration{
+@media screen and (max-width: 1500px) {
+    .rightDecoration {
         right: -490px;
     }
-    section{
+    #rightDecorationDefault {
+        display: none;
+    }
+    #rightDecoration1301 {
+        display: block;
+        top: 210px;
+    }
+    .navbar {
+        background-color: #7D8F41;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    section {
         padding: 40px 75px;
     }
 
-    .rond, .square, .rond-inv{
+    .rond, .square, .rond-inv {
         display: none;
     }
-    #advantages>.rond, #advantages>.square, #advantages>.rond-inv{
+    #advantages > .rond, #advantages > .square, #advantages > .rond-inv {
         display: none;
     }
-    #advantages{
-        .left{
+    #advantages {
+        .left {
             width: 80%;
-            p{
+
+            p {
                 width: 100%;
             }
         }
     }
 }
 
-@media screen and (max-width: 966px){
-    #why{
-        .left{
+@media screen and (max-width: 1059px){
+    .rightDecoration {
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width: 966px) {
+    #why {
+        .left {
             order: 0;
 
         }
-        .right{
+
+        .right {
             order: 2;
             text-align: left;
-            p{
+
+            p {
                 order: 2;
             }
-            img{
+
+            img {
                 order: 1;
             }
         }
-        .center{
+
+        .center {
             order: 1;
         }
-        img{
+
+        img {
             float: none;
         }
     }
 }
 
-@media screen and (max-width: 767px){
-    .decoration-title::after{
+@media screen and (max-width: 767px) {
+    .decoration-title::after {
         content: none;
     }
 
-    .decoration-title-center::after{
+    .decoration-title-center::after {
         content: none;
     }
 
 
-    section{
+    section {
         padding: 40px 5%;
     }
 
 
-    #rightDecoration{
+    .rightDecoration {
         display: none;
     }
 
-    .none-res{
+    .none-res {
         display: none;
     }
 
-    #presentation{
-        h1{
+    #presentation {
+        h1 {
             font-size: 44px;
         }
-        .left{
-            width: auto ;
+
+        .left {
+            width: auto;
             min-width: auto;
         }
-        .right{
+
+        .right {
             width: 100%;
             min-width: auto;
-            img{
+
+            img {
                 width: 100%;
             }
         }
     }
-    #advantages{
-        .left{
+    #advantages {
+        .left {
             width: 100%;
             min-width: auto;
-            .advElem{
+
+            .advElem {
                 flex-direction: column;
             }
         }
-        .right{
+
+        .right {
             width: 100%;
             min-width: auto;
         }
     }
-    #why{
+    #why {
         padding: 40px 5px;
-        .left, .right, .center{
+        .left, .right, .center {
             width: 100%;
             min-width: auto;
-            .icon{
+            .icon {
                 width: 100px;
             }
-            p{
+            p {
                 font-size: 20px;
             }
-            .advElem{
+            .advElem {
                 width: 80%;
                 margin: 0 auto;
             }
         }
-        .center{
+        .center {
             width: 100%;
-            img{
+            img {
                 width: 80%;
                 margin: 0 auto;
             }
