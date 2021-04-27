@@ -169,7 +169,7 @@ nav li.nav-item {
 }
 nav #logo {
   height: 109px;
-  width: 300px;
+  width: 250px;
 }
 @media screen and (max-width: 1037px) {
   nav #logo {
