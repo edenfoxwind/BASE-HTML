@@ -5,21 +5,6 @@ body {
     overflow-x: hidden;
 }
 
-
-.rightDecoration {
-    position: absolute;
-    right: 0;
-    top: -1px;
-    z-index: -10;
-}
-#rightDecorationDefault {
-    display: block;
-}
-#rightDecoration1301 {
-    display: none;
-}
-
-
 section {
     padding: 80px 150px;
 }
@@ -372,21 +357,6 @@ section {
         }
     }
 }
-@media screen and (max-width: 1500px) {
-    .rightDecoration {
-        right: -490px;
-    }
-    #rightDecorationDefault {
-        display: none;
-    }
-    #rightDecoration1301 {
-        display: block;
-        top: 210px;
-    }
-    .navbar {
-        background-color: #7D8F41;
-    }
-}
 
 
 @media screen and (max-width: 1300px) {
@@ -411,13 +381,6 @@ section {
         }
     }
 }
-
-@media screen and (max-width: 1059px){
-    .rightDecoration {
-        display: none !important;
-    }
-}
-
 
 @media screen and (max-width: 966px) {
     #why {
