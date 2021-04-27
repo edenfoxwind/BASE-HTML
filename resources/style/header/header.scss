@@ -170,6 +170,9 @@ nav{
         a.nav-link.animation:hover::after{
             width: 0;
         }
+        .none-res {
+            display: none;
+        }
     }
 }
 

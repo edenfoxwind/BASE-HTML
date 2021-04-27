@@ -306,6 +306,9 @@ nav li.nav-item div svg {
   nav a.nav-link.animation:hover::after {
     width: 0;
   }
+  nav .none-res {
+    display: none;
+  }
 }
 ::-webkit-scrollbar {
   width: 10px;
