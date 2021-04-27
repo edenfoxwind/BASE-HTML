@@ -1,33 +1,37 @@
+/* Imports */
+/* Variable */
 /* Fonts */
 @font-face {
   font-family: "Lato Light";
-  src: url("../font/Lato-Light.ttf");
+  src: url("font/Lato-Light.ttf");
 }
 @font-face {
   font-family: "Lato Regular";
-  src: url("../font/Lato-Regular.ttf");
+  src: url("font/Lato-Regular.ttf");
 }
 @font-face {
   font-family: "Lato Bold";
-  src: url("../font/Lato-Bold.ttf");
+  src: url("font/Lato-Bold.ttf");
 }
 @font-face {
   font-family: "Montserrat Light";
-  src: url("../font/Montserrat-Light.ttf");
+  src: url("font/Montserrat-Light.ttf");
 }
 @font-face {
   font-family: "Montserrat Medium";
-  src: url("../font/Montserrat-Medium.ttf");
+  src: url("font/Montserrat-Medium.ttf");
 }
 @font-face {
   font-family: "Montserrat Regular";
-  src: url("../font/Montserrat-Regular.ttf");
+  src: url("font/Montserrat-Regular.ttf");
 }
 @font-face {
   font-family: "Montserrat Bold";
-  src: url("../font/Montserrat-Bold.ttf");
+  src: url("font/Montserrat-Bold.ttf");
 }
 /* Fonts */
+/*# sourceMappingURL=fonts.css.map */
+/* Imports */
 /* SVG Forms */
 .topRight {
   width: 25%;
@@ -119,13 +123,14 @@
 }
 
 /* SVG Forms */
-/* style du formulaire et de ses enfants */
+/* Style du formulaire et de ses enfants */
 .Form {
   background-color: #774418;
   border-radius: 70px;
   display: flex;
   justify-content: center;
   box-shadow: 10px 10px 0px 0px rgba(119, 68, 24, 0.4);
+  width: 100px;
   /* Titre du formulaire */
   /* Titre du formulaire */
   /* Inputs du formulaire */
@@ -144,13 +149,13 @@
   font-family: "Lato Bold";
 }
 .Form input[type=text], .Form input[type=password], .Form input[type=button], .Form input[type=email] {
-  margin: 40px;
+  margin: 10px;
   padding: 10px;
   border-width: 0 0 3px;
   height: 40px;
   width: 80%;
   border-color: white;
-  font-family: "Lato Bold";
+  font-family: "Lato Bold", serif;
   color: white;
   background-color: transparent;
   outline: 0;
@@ -163,7 +168,7 @@
   padding-left: 15px;
   color: white;
   border: 3px solid white;
-  font-family: "Lato Bold";
+  font-family: "Lato Bold", serif;
   color: white;
   background-color: transparent;
   outline: 0;
@@ -186,7 +191,12 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1500px) {
+  .Form {
+    margin: 50px 0 0 0;
+  }
+}
+@media screen and (max-width: 1059px) {
   body {
     background-color: #774418;
   }
@@ -206,15 +216,21 @@
   }
 
   .Form {
+    margin: 0 0 0 0;
     box-shadow: 0px 0px 0px 0px;
     border-radius: 0px;
   }
   .Form h1 {
-    font-size: 40px;
+    padding: 0px 0 0 0;
+    font-size: 38px;
   }
 }
 @media screen and (max-width: 767px) {
+  .Form {
+    margin: 0 0 0 0;
+  }
   .Form h1 {
+    padding: 10px 0 0 0;
     font-size: 30px;
   }
 }
