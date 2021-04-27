@@ -1,31 +1,31 @@
 /* Fonts */
 @font-face {
   font-family: "Lato Light";
-  src: url("../Font/Lato-Light.ttf");
+  src: url("../font/Lato-Light.ttf");
 }
 @font-face {
   font-family: "Lato Regular";
-  src: url("../Font/Lato-Regular.ttf");
+  src: url("../font/Lato-Regular.ttf");
 }
 @font-face {
   font-family: "Lato Bold";
-  src: url("../Font/Lato-Bold.ttf");
+  src: url("../font/Lato-Bold.ttf");
 }
 @font-face {
   font-family: "Montserrat Light";
-  src: url("../Font/Montserrat-Light.ttf");
+  src: url("../font/Montserrat-Light.ttf");
 }
 @font-face {
   font-family: "Montserrat Medium";
-  src: url("../Font/Montserrat-Medium.ttf");
+  src: url("../font/Montserrat-Medium.ttf");
 }
 @font-face {
   font-family: "Montserrat Regular";
-  src: url("../Font/Montserrat-Regular.ttf");
+  src: url("../font/Montserrat-Regular.ttf");
 }
 @font-face {
   font-family: "Montserrat Bold";
-  src: url("../Font/Montserrat-Bold.ttf");
+  src: url("../font/Montserrat-Bold.ttf");
 }
 /* Fonts */
 body {
@@ -66,7 +66,6 @@ nav div.navbar-collapse {
 nav li.nav-item {
   width: auto;
   margin: auto 0;
-  padding: 10px;
 }
 
 #bottom-nav {
