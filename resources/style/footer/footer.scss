@@ -1,3 +1,4 @@
+@import "../variable.scss";
 footer{
     section{
         background: rgb(82,92,48);
@@ -59,6 +60,12 @@ footer{
         }
     }
 }
+
+.dark-footer{
+    background: $MarronSecondaire1;
+    background: linear-gradient(180deg, $MarronSecondaire1 0%, rgba(60, 34, 12, 1) 100%);
+}
+
 
 // Waves system
 

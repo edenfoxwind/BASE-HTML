@@ -1,4 +1,8 @@
 /* Variable */
+nav {
+  height: 212px;
+  padding: 16px !important;
+}
 nav a.nav-link {
   color: white;
   font-family: "Montserrat Regular", serif;
@@ -6,17 +10,11 @@ nav a.nav-link {
   padding: 5px;
   font-size: 25px;
 }
-
 nav a.navbar-brand {
   margin: 0;
   color: #606C38;
   font-family: "Montserrat Bold";
 }
-
-nav a.navbar-brand img {
-  width: 100px;
-}
-
 nav li.separator {
   display: none;
   width: 100px;
@@ -24,80 +22,153 @@ nav li.separator {
   background-color: white;
   margin: 0 auto;
 }
-
 nav .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
 nav div.navbar-collapse {
   position: absolute;
   right: 50px;
 }
-
 nav li.nav-item {
   width: auto;
   margin: auto 0;
 }
-
-nav #logo {
-  height: 109px;
-  width: 300px;
+nav li.nav-item div svg {
+  margin: auto 0;
 }
 
-@media screen and (max-width: 1037px) {
-  nav #logo {
-    height: 55px;
-    width: 150px;
-  }
+.rightDecoration {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  z-index: -10;
 }
 
-@media screen and (max-width: 875px) {
-  nav #logo {
-    height: 75px;
-    width: 205px;
-    padding: 8px 15px;
-    background-color: white;
-  }
+#rightDecorationDefault {
+  display: block;
 }
 
-#bottom-nav {
+#rightDecoration1301 {
   display: none;
 }
 
-@media screen and (max-width: 1301px) {
-  nav div.navbar-collapse {
-    position: absolute;
-    right: 10px;
+@media screen and (max-width: 1500px) {
+  .rightDecoration {
+    right: -490px;
   }
+
+  #rightDecorationDefault {
+    display: none;
+  }
+
+  #rightDecoration1301 {
+    display: block;
+    top: 210px;
+  }
+
+  .navbar {
+    background-color: #7D8F41;
+  }
+}
+@media screen and (max-width: 1059px) {
+  .rightDecoration {
+    display: none !important;
+  }
+}
+.HeaderWave {
+  display: none;
+}
+
+.logo {
+  width: 430px;
+}
+
+#HeaderLogo_dark {
+  display: block;
+}
+
+#HeaderLogo_light {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .rightDecoration {
+    right: -490px;
+  }
+
+  #HeaderLogo_dark {
+    display: none;
+  }
+
+  #HeaderLogo_light {
+    display: block;
+  }
+
+  .navbar {
+    background-color: #7D8F41;
+  }
+}
+@media screen and (max-width: 1301px) {
   nav a.nav-link {
     font-size: 19px;
     padding: 0;
   }
+  nav img.logo {
+    width: 350px;
+  }
 }
+@media screen and (max-width: 1059px) {
+  nav {
+    background: #7d8f41;
+    background: linear-gradient(180deg, #283618 0%, #415024 40%, #7d8f41 100%);
+    min-height: 212px !important;
+    height: auto;
+    display: block !important;
+  }
+  nav .containerLogo {
+    display: flex;
+    justify-content: center;
+  }
+  nav .navbar-collapse {
+    position: relative !important;
+    right: 0 !important;
+    display: block;
+    justify-content: center;
+    box-sizing: content-box;
+  }
+  nav .navbar-collapse ul {
+    margin: 0 !important;
+  }
 
+  .HeaderWave {
+    display: block;
+    transform: rotate(0.5turn);
+  }
+}
 @media screen and (max-width: 767px) {
   nav {
     background: #7d8f41;
-    background: -webkit-gradient(linear, left top, left bottom, from(#283618), color-stop(40%, #415024), to(#7d8f41));
     background: linear-gradient(180deg, #283618 0%, #415024 40%, #7d8f41 100%);
   }
   nav li.separator {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   nav div.navbar-collapse {
     position: relative;
-    right: 0;
+  }
+  nav div.collapse {
+    display: none;
+  }
+  nav li.nav-item {
+    margin: 10px;
   }
   nav a.nav-link.animation:hover::after {
     width: 0;
   }
-  #bottom-nav {
-    display: block;
+  nav .none-res {
+    display: none;
   }
 }
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 2px;
@@ -129,4 +200,5 @@ nav #logo {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
 /*# sourceMappingURL=header.css.map */
