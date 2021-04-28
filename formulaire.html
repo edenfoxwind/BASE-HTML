@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="resources/style/common.css" rel="stylesheet">
-    <link href="resources/style/cart/cart.css" rel="stylesheet">
+    <link href="./resources/style/formul/formul.css" rel="stylesheet">
 
 </head>
 <body>
@@ -89,64 +89,74 @@
     </div>
 </header>
 
-
 <img id="rightDecoration" src="./resources/image/rightCartShape.svg" alt="">
 
-<section id="cart">
+<section id="formul">
     <div class="cart-content">
-        <h1>Votre panier (1)</h1>
+        <h1>Vos articles (1)</h1>
         <div class="cart-elements">
             <div class="cart-img-container">
-                <img src="./resources/image/cart-ex.svg">
+                <img src="./resources/image/cart-ex.svg" alt="Image de l'article">
             </div>
             <div class="cart-text-container">
                 <h3>Éolienne (type 1.) <span class="price">50€</span></h3>
                 <p><span class="bold">Qte: </span> 1 pièce</p>
                 <p><span class="bold">Taille: </span> 10x20x30cm</p>
-                <a href="#" class="delete">Supprimer</a>
             </div>
         </div>
         <div class="cart-elements">
             <div class="cart-img-container">
-                <img src="./resources/image/cart-ex.svg">
+                <img src="./resources/image/cart-ex.svg" alt="Image de l'article">
             </div>
             <div class="cart-text-container">
                 <h3>Éolienne (type 1.) <span class="price">50€</span></h3>
                 <p><span class="bold">Qte: </span> 1 pièce</p>
                 <p><span class="bold">Taille: </span> 10x20x30cm</p>
-                <a href="#" class="delete">Supprimer</a>
             </div>
         </div>
-    </div>
-    <div class="resume">
-        <div class="content">
-            <div class="top">
-                <h2>RÉSUMÉ</h2>
-            </div>
-            <div class="separator"></div>
-
-            <div class="price">
-                <p>
-                    Sous-total <span class="right">40€</span>
-                </p>
-                <p>
-                    TVA(20%) <span class="right">10€</span>
-                </p>
-            </div>
-
-            <div class="separator"></div>
-            <div class="bottom">
-                <p class="total">
-                    Total: <span class="right">50€</span>
-                </p>
-            </div>
-
-            <a href="#" class="button">Continuer</a>
-        </div>
+        <p class="total">Total : 100€</p>
     </div>
 </section>
 
+<section class="cart-form">
+    <!-- Formulaire de commande - Début -->
+    <form action="/" method="post">
+        <div class="input-group">
+            <div class="input-contain">
+                <label for="nom">Nom :</label>
+                <input name="nom" id="nom" placeholder="Nom"/>
+            </div>
+            <div class="input-contain">
+                <label for="prenom">Prénom :</label>
+                <input name="prenom" id="prenom" placeholder="Prénom"/>
+            </div>
+        </div>
 
+        <div class="input-contain">
+            <label for="rue">Rue et numéro de livraison :</label>
+            <input name="rur" id="rue" placeholder="Rue et numéro de livraison"/>
+        </div>
+
+        <div class="input-group">
+            <div class="input-contain">
+                <label for="ville">Ville :</label>
+                <input name="ville" id="ville" placeholder="Ville"/>
+            </div>
+            <div class="input-contain">
+                <label for="code">Code Postal :</label>
+                <input name="code" id="code" placeholder="Code Postal"/>
+            </div>
+        </div>
+
+        <div class="input-contain">
+            <label for="pays">Pays :</label>
+            <input name="pays" id="pays" placeholder="Pays"/>
+        </div>
+
+        <button>Valider et payer</button>
+    </form>
+    <!-- Formulaire de commande - Fin -->
+</section>
 
 
 <footer>
@@ -171,19 +181,19 @@
                 <div class="col-md-4 left">
                     <h2>Utiliaires</h2>
                     <ul>
-                        <li><a href="/sitemap">Sitemap</a></li>
-                        <li><a href="/faq">FAQ</a></li>
-                        <li><a href="/status">Status</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Status</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 center">
                     <h2>Navigation</h2>
                     <ul>
-                        <li><a href="/home">Accueil</a></li>
-                        <li><a href="/windturbine">L'éolienne</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/team">L'équipe</a></li>
-                        <li><a href="/contect">Contact</a></li>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">L'éolienne</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">L'équipe</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 right">
