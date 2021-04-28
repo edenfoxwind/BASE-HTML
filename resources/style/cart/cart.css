@@ -1,0 +1,220 @@
+/* Variable */
+body {
+  overflow-x: hidden;
+}
+
+#rightDecoration {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  z-index: -10;
+}
+
+#cart {
+  padding: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#cart .cart-content {
+  width: 70%;
+  min-width: 310px;
+  margin-top: 15px;
+}
+
+#cart .cart-content h1 {
+  background-color: #EBEBEB;
+  padding: 10px 25px;
+  font-size: 45px;
+  font-family: "Lato Regular";
+}
+
+#cart .cart-content .cart-elements {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 9fr;
+      grid-template-columns: auto 9fr;
+  grid-column-gap: 10px;
+}
+
+#cart .cart-content .cart-elements .cart-img-container {
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  padding: 10px;
+  background-color: #EBEBEB;
+}
+
+#cart .cart-content .cart-elements .cart-img-container img {
+  padding: 5px;
+  background-color: white;
+}
+
+#cart .cart-content .cart-elements .cart-text-container {
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  margin: auto 0;
+}
+
+#cart .cart-content .cart-elements .cart-text-container h3 {
+  font-size: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#cart .cart-content .cart-elements .cart-text-container .price {
+  color: #606C38;
+  font-family: "Montserrat Regular";
+}
+
+#cart .cart-content .cart-elements .cart-text-container .delete {
+  color: red;
+}
+
+#cart .cart-content .cart-elements .cart-text-container p {
+  font-size: 29px;
+  font-family: "Montserrat Light";
+}
+
+#cart .cart-content .cart-elements .cart-text-container p .bold {
+  font-family: "Montserrat Bold";
+}
+
+#cart .cart-content .cart-elements .cart-text-container a {
+  font-family: "Lato Regular";
+  font-size: 25px;
+}
+
+#cart .resume {
+  text-align: center;
+  margin-top: 15px;
+  min-width: 310px;
+  width: 25%;
+  background-color: #774418;
+  border-radius: 5px;
+  color: white;
+}
+
+#cart .resume h2 {
+  text-align: left;
+  margin: 0;
+  padding: 25px 15px;
+  font-size: 30px;
+  font-family: "Montserrat Regular";
+}
+
+#cart .resume div {
+  padding: 15px;
+}
+
+#cart .resume .separator {
+  width: 100%;
+  height: 1px;
+  padding: 0;
+  background-color: white;
+}
+
+#cart .resume p {
+  font-family: "Montserrat Regular";
+  color: white;
+  padding: 15px 15px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#cart .resume .total {
+  font-size: 30px;
+}
+
+#cart .resume .button {
+  display: inline-block;
+  margin: 15px;
+  background-color: transparent;
+  border: solid 1px #606C38;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#cart .resume .button:hover {
+  border: solid 1px white;
+  background-color: #606C38;
+}
+
+@media screen and (max-width: 1300px) {
+  #rightDecoration {
+    width: 90%;
+  }
+  #cart {
+    padding: 100px 0;
+  }
+  #cart .cart-content {
+    width: 95%;
+  }
+  #cart .cart-content .cart-elements .cart-img-container img {
+    height: 150px;
+  }
+  #cart .cart-content .cart-elements .cart-text-container h3 {
+    font-size: 25px;
+  }
+  #cart .cart-content .cart-elements .cart-text-container p {
+    font-size: 22px;
+    margin: 0;
+  }
+  #cart .cart-content .cart-elements .cart-text-container .delete {
+    font-size: 23px;
+  }
+  #cart .resume {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rightDecoration {
+    display: none;
+  }
+  #cart {
+    padding: 10px 0;
+  }
+  #cart .cart-content h1 {
+    font-size: 30px;
+  }
+  #cart .cart-content .cart-elements .cart-img-container img {
+    height: 100px;
+  }
+  #cart .cart-content .cart-elements .cart-text-container h3 {
+    font-size: 20px;
+  }
+  #cart .cart-content .cart-elements .cart-text-container p {
+    font-size: 18px;
+    margin: 0;
+  }
+  #cart .cart-content .cart-elements .cart-text-container .delete {
+    font-size: 19px;
+  }
+  #cart .resume {
+    width: 300px;
+    min-width: 0;
+  }
+}
+/*# sourceMappingURL=cart.css.map */
