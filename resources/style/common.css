@@ -30,6 +30,7 @@
 }
 /* Fonts */
 /*# sourceMappingURL=fonts.css.map */
+/* Variable */
 footer {
   text-align: center;
 }
@@ -86,6 +87,11 @@ footer .col-md-4 {
     font-size: 18px;
   }
 }
+.dark-footer {
+  background: #774418;
+  background: linear-gradient(180deg, #774418 0%, #3c220c 100%);
+}
+
 .waves {
   position: relative;
   width: 100%;
@@ -134,6 +140,10 @@ footer .col-md-4 {
   }
 }
 /* Variable */
+nav {
+  height: 212px;
+  padding: 16px !important;
+}
 nav a.nav-link {
   color: white;
   font-family: "Montserrat Regular", serif;
@@ -145,9 +155,6 @@ nav a.navbar-brand {
   margin: 0;
   color: #606C38;
   font-family: "Montserrat Bold";
-}
-nav a.navbar-brand img {
-  width: 100px;
 }
 nav li.separator {
   display: none;
@@ -167,37 +174,116 @@ nav li.nav-item {
   width: auto;
   margin: auto 0;
 }
-nav #logo {
-  height: 109px;
-  width: 300px;
-}
-@media screen and (max-width: 1037px) {
-  nav #logo {
-    height: 55px;
-    width: 150px;
-  }
-}
-@media screen and (max-width: 875px) {
-  nav #logo {
-    height: 75px;
-    width: 205px;
-    padding: 8px 15px;
-    background-color: white;
-  }
+nav li.nav-item div svg {
+  margin: auto 0;
 }
 
-#bottom-nav {
+.rightDecoration {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  z-index: -10;
+}
+
+#rightDecorationDefault {
+  display: block;
+}
+
+#rightDecoration1301 {
   display: none;
 }
 
-@media screen and (max-width: 1301px) {
-  nav div.navbar-collapse {
-    position: absolute;
-    right: 10px;
+@media screen and (max-width: 1500px) {
+  .rightDecoration {
+    right: -490px;
   }
+
+  #rightDecorationDefault {
+    display: none;
+  }
+
+  #rightDecoration1301 {
+    display: block;
+    top: 210px;
+  }
+
+  .navbar {
+    background-color: #7D8F41;
+  }
+}
+@media screen and (max-width: 1059px) {
+  .rightDecoration {
+    display: none !important;
+  }
+}
+.HeaderWave {
+  display: none;
+}
+
+.logo {
+  width: 430px;
+}
+
+#HeaderLogo_dark {
+  display: block;
+}
+
+#HeaderLogo_light {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .rightDecoration {
+    right: -490px;
+  }
+
+  #HeaderLogo_dark {
+    display: none;
+  }
+
+  #HeaderLogo_light {
+    display: block;
+  }
+
+  .navbar {
+    background-color: #7D8F41;
+  }
+}
+@media screen and (max-width: 1301px) {
   nav a.nav-link {
     font-size: 19px;
     padding: 0;
+  }
+  nav img.logo {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1059px) {
+  nav {
+    background: #7d8f41;
+    background: linear-gradient(180deg, #283618 0%, #415024 40%, #7d8f41 100%);
+    min-height: 212px !important;
+    height: auto;
+    display: block !important;
+  }
+  nav .containerLogo {
+    display: flex;
+    justify-content: center;
+  }
+  nav .navbar-collapse {
+    position: relative !important;
+    right: 0 !important;
+    display: block;
+    justify-content: center;
+    box-sizing: content-box;
+  }
+  nav .navbar-collapse ul {
+    margin: 0 !important;
+  }
+
+  .HeaderWave {
+    display: block;
+    transform: rotate(0.5turn);
   }
 }
 @media screen and (max-width: 767px) {
@@ -210,14 +296,18 @@ nav #logo {
   }
   nav div.navbar-collapse {
     position: relative;
-    right: 0;
+  }
+  nav div.collapse {
+    display: none;
+  }
+  nav li.nav-item {
+    margin: 10px;
   }
   nav a.nav-link.animation:hover::after {
     width: 0;
   }
-
-  #bottom-nav {
-    display: block;
+  nav .none-res {
+    display: none;
   }
 }
 ::-webkit-scrollbar {
