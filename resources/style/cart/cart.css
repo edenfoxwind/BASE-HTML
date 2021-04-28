@@ -98,6 +98,14 @@ body {
   font-size: 25px;
 }
 
+#cart .cart-content .total {
+  padding: 10px 25px;
+  margin-top: 10px;
+  background-color: #EBEBEB;
+  width: 100%;
+  border-radius: 5px;
+}
+
 #cart .resume {
   text-align: center;
   margin-top: 15px;
@@ -161,6 +169,69 @@ body {
   background-color: #606C38;
 }
 
+.cart-form {
+  text-align: center;
+  padding: 0 200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cart-form .input-contain {
+  text-align: left;
+  width: 100%;
+}
+
+.cart-form .input-contain label, .cart-form .input-contain input {
+  font-family: "Lato Regular";
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.cart-form .input-contain input {
+  border: solid 2px #606C38;
+  border-radius: 15px;
+  padding: 10px 25px;
+}
+
+.cart-form .input-contain input {
+  outline: none;
+}
+
+.cart-form .input-group {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-form .input-group .input-contain {
+  width: 49%;
+}
+
+.cart-form button {
+  margin-top: 50px;
+  margin-bottom: 75px;
+  border: solid 1px white;
+  background-color: #606C38;
+  color: white;
+  padding: 10px 75px;
+  border-radius: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cart-form button:hover {
+  border: solid 1px #606C38;
+  background-color: transparent;
+  color: #606C38;
+}
+
 @media screen and (max-width: 1300px) {
   #rightDecoration {
     width: 90%;
@@ -186,6 +257,9 @@ body {
   }
   #cart .resume {
     width: 30%;
+  }
+  .cart-form {
+    padding: 0 10px;
   }
 }
 
@@ -215,6 +289,10 @@ body {
   #cart .resume {
     width: 300px;
     min-width: 0;
+  }
+  .cart-form .input-group .input-contain {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 /*# sourceMappingURL=cart.css.map */
