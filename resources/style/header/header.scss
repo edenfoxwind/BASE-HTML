@@ -1,7 +1,5 @@
 @import "../variable";
 nav{
-    height: 212px;
-    padding: 16px !important;
     a.nav-link{
         color: white;
         font-family: "Montserrat Regular", serif;
@@ -13,6 +11,9 @@ nav{
         margin: 0;
         color: $VertPrincipale1;
         font-family : "Montserrat Bold";
+        img{
+            width : 100px;
+        }
     }
 
     li.separator{
@@ -34,124 +35,41 @@ nav{
     li.nav-item{
         width: auto;
         margin: auto 0;
-        div {
-            svg {
-                margin: auto 0;
-            }
+    }
+    #logo {
+        height: 109px;
+        width: 250px;
+    }
+    @media screen and (max-width: 1037px){
+        #logo {
+            height: 55px;
+            width: 150px;
+        }
+    }
+    @media screen and (max-width: 875px){
+        #logo {
+            height: 75px;
+            width: 205px;
+            padding: 8px 15px;
+            background-color: white;
         }
     }
 }
 
-//
-//                          ┏╋━━━━━━━━━◥◣◆◢◤━━━━━━━━━╋┓
-//                                 RIGHT DECO
-//                          ┗╋━━━━━━━━━◢◤◆◥◣━━━━━━━━━╋┛
-//
-
-.rightDecoration {
-    position: absolute;
-    right: 0;
-    top: -1px;
-    z-index: -10;
-}
-#rightDecorationDefault {
-    display: block;
-}
-#rightDecoration1301 {
+#bottom-nav{
     display: none;
-}
-@media screen and (max-width: 1500px) {
-    .rightDecoration {
-        right: -490px;
-    }
-    #rightDecorationDefault {
-        display: none;
-    }
-    #rightDecoration1301 {
-        display: block;
-        top: 210px;
-    }
-    .navbar {
-        background-color: #7D8F41;
-    }
-}
-@media screen and (max-width: 1059px){
-    .rightDecoration {
-        display: none !important;
-    }
-}
-
-
-.HeaderWave{
-    display: none;
-}
-
-.logo {
-    width: 430px;
-}
-#HeaderLogo_dark {
-    display: block;
-}
-#HeaderLogo_light {
-    display: none;
-}
-
-@media screen and (max-width: 1500px) {
-    .rightDecoration {
-        right: -490px;
-    }
-    #HeaderLogo_dark {
-        display: none;
-    }
-    #HeaderLogo_light {
-        display: block;
-    }
-    .navbar {
-        background-color: #7D8F41;
-    }
 }
 
 @media screen and (max-width:1301px){
     nav{
+        div.navbar-collapse{
+            position: absolute;
+            right: 10px;
+        }
         a.nav-link{
             font-size: 19px;
             padding: 0;
         }
-    }
-}
-@media screen and (max-width:1301px) and (min-width: 350px){
-    nav{
-        img.logo {
-            width: 350px;
-        }
-    }
-}
-
-@media screen and (max-width: 1059px){
-    nav {
-        background: rgb(125,143,65);
-        background: linear-gradient(180deg, rgba(40,54,24,1) 0%, rgb(65, 80, 36) 40%, rgba(125,143,65,1) 100%);
-        min-height: 212px !important;
-        height: auto;
-        display: block !important;
-        .containerLogo {
-            display: flex;
-            justify-content: center;
-        }
-        .navbar-collapse {
-            position: relative !important;
-            right: 0 !important;
-            display: block;
-            justify-content: center;
-            box-sizing: content-box;
-            ul {
-                margin: 0 !important;
-            }
-        }
-    }
-    .HeaderWave{
-        display: block;
-        transform: rotate(0.5turn);
     }
 }
 
@@ -164,30 +82,16 @@ nav{
         }
         div.navbar-collapse{
             position: relative;
-        }
-        div.collapse {
-            display: none;
-        }
-        li.nav-item {
-            margin: 10px;
+            right: 0;
         }
         a.nav-link.animation:hover::after{
             width: 0;
         }
-        .none-res {
-            display: none;
-        } 
+    }
+    #bottom-nav{
+        display: block;
     }
 }
-@media screen and (max-width: 350px){
-    nav {
-        .logo {
-            width: 95%;
-        }
-    }
-}
-
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 2px;

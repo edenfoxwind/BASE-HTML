@@ -1,0 +1,10 @@
+<svg id="Composant_97_1" data-name="Composant 97 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1620" height="500" viewBox="0 0 1620 500">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.025" x2="0.715" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7d8f41"/>
+      <stop offset="1" stop-color="#3f4821"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_46" data-name="Rectangle 46" width="1620" height="499.478" rx="15" fill="url(#linear-gradient)"/>
+  <path id="Tracé_442" data-name="Tracé 442" d="M7765.361,1398.468s200.66,67.97,209.546,141.313-74.487,63.051-130.33,152.089,16.517,206.061,16.517,206.061,636.844.538,643.281.537,13.59-6.846,13.623-14.4.115-463.655.036-472-7.422-13.456-15.129-13.52S7765.361,1398.468,7765.361,1398.468Z" transform="translate(-6923.063 -1398.468)" fill="#774418" opacity="0.59"/>
+</svg>
