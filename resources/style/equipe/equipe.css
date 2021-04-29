@@ -77,19 +77,20 @@ body {
 }
 #presentation .left {
   width: 50%;
-  min-width: 450px;
   margin: auto 0;
 }
 #presentation h1 {
   font-size: 60px;
-  padding: 100px;
+  margin: 50px auto;
+  text-align: center;
 }
 #presentation .right {
   width: 50%;
-  min-width: 450px;
+  display: flex;
+  justify-content: center;
 }
 #presentation .right img {
-  width: 95%;
+  width: 90%;
 }
 
 #midText {
@@ -160,6 +161,14 @@ body {
   }
   #presentation .left h1 {
     font-size: 40px;
+  }
+  #presentation .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #presentation .right img {
+    width: 90%;
   }
 }
 @media screen and (max-width: 767px) {
