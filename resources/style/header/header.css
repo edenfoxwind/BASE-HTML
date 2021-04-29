@@ -113,6 +113,8 @@ nav li.nav-item div svg {
     font-size: 19px;
     padding: 0;
   }
+}
+@media screen and (max-width: 1301px) and (min-width: 350px) {
   nav img.logo {
     width: 350px;
   }
@@ -167,6 +169,11 @@ nav li.nav-item div svg {
   }
   nav .none-res {
     display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  nav .logo {
+    width: 95%;
   }
 }
 ::-webkit-scrollbar {
