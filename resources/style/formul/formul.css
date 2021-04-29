@@ -182,26 +182,26 @@ body {
     width: 90%;
   }
 
-  #cart {
+  #formul {
     padding: 100px 0;
   }
-  #cart .cart-content {
+  #formul .cart-content {
     width: 95%;
   }
-  #cart .cart-content .cart-elements .cart-img-container img {
+  #formul .cart-content .cart-elements .cart-img-container img {
     height: 150px;
   }
-  #cart .cart-content .cart-elements .cart-text-container h3 {
+  #formul .cart-content .cart-elements .cart-text-container h3 {
     font-size: 25px;
   }
-  #cart .cart-content .cart-elements .cart-text-container p {
+  #formul .cart-content .cart-elements .cart-text-container p {
     font-size: 22px;
     margin: 0;
   }
-  #cart .cart-content .cart-elements .cart-text-container .delete {
+  #formul .cart-content .cart-elements .cart-text-container .delete {
     font-size: 23px;
   }
-  #cart .resume {
+  #formul .resume {
     width: 30%;
   }
 
@@ -214,26 +214,26 @@ body {
     display: none;
   }
 
-  #cart {
+  #formul {
     padding: 10px 0;
   }
-  #cart .cart-content h1 {
+  #formul .cart-content h1 {
     font-size: 30px;
   }
-  #cart .cart-content .cart-elements .cart-img-container img {
+  #formul .cart-content .cart-elements .cart-img-container img {
     height: 100px;
   }
-  #cart .cart-content .cart-elements .cart-text-container h3 {
+  #formul .cart-content .cart-elements .cart-text-container h3 {
     font-size: 20px;
   }
-  #cart .cart-content .cart-elements .cart-text-container p {
+  #formul .cart-content .cart-elements .cart-text-container p {
     font-size: 18px;
     margin: 0;
   }
-  #cart .cart-content .cart-elements .cart-text-container .delete {
+  #formul .cart-content .cart-elements .cart-text-container .delete {
     font-size: 19px;
   }
-  #cart .resume {
+  #formul .resume {
     width: 300px;
     min-width: 0;
   }
