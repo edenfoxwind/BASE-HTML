@@ -83,16 +83,12 @@ body{
   background-position: center;
   background-size: cover;
   border-radius: 17px;
-  margin-top: 40px;
-  margin-bottom: 40px;
     h2 {
       font-weight: bold;
       color: white;
       padding-top: 20px;
       padding-left: 10px;
 
-      margin-bottom: 0px;
-      padding-bottom: 0px;
     }
     #separator{
       margin-left: 10px;
@@ -107,7 +103,7 @@ body{
       font-weight: bold;
       color: white;
     }
-    button{
+    .button{
       margin-bottom: 20px;
       margin-left: 10px;
       padding: 15px;
@@ -126,13 +122,17 @@ body{
     border-radius: 0px 15px 15px 0px;
     right: 0px;
     top: 0px;
-
   }
 }
-button{
-  #seeMore{
-    padding: 100px;
-  }
+.moreArticles{
+  background-color: rgb(86, 98, 45);
+  color: White;
+  margin: 10px;
+  padding: 15px 80px;
+  border-radius: 10px;
+  font-size: 30px;
+  border: 0px solid transparent;
+  font-family: "Lato Bold";
 }
 /* Blog style */
 /* Responsive */

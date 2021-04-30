@@ -7,11 +7,11 @@ GitHub du Projet Fil rouge - EDEN School
 Dossiers :
 
 
-    /Blog/                    - Page du Blog
+    /Equipe/                - Page du Register
     /Resources/               - Resources
       | /Image/               - Images/SVG
       | /Style/               - SCSS/CSS
           | /Font/            - Polices d'écriture
           | /Header/          - Style du Header
           | /Footer/          - Style du Footer
-          | /Blog/            - Style du Blog
+          | /Equipe/          - Style du Register
