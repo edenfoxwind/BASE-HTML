@@ -144,6 +144,13 @@ body{
   } }
 }
 }
+@media screen and (max-width: 1200px){
+  .articleBlock{
+    .postPreviewImage {
+      width: 43%;
+    }
+  }
+}
 @media screen and (max-width: 1096px){
   #presentation{
     margin-bottom: 400px;
@@ -154,7 +161,7 @@ body{
 }
 @media screen and (max-width: 992px){
   .articleBlock{
-    .postPreviewImage{
+    .postPreviewImage {
       display: none;
     }
   }
