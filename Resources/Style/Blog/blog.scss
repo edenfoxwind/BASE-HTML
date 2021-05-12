@@ -79,9 +79,11 @@ body{
   margin-bottom: 100px;
 }
 .articleBlock{
-  background-image: url("../../Image/ArticleForm.svg");
+  background-image: url("../../image/ArticleForm.svg");
   background-position: center;
+  background-position-x: -200px;
   background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 17px;
     h2 {
       font-weight: bold;
@@ -116,7 +118,7 @@ body{
     width: 40%;
     height: 100%;
     position: absolute;
-    z-index: 5;
+    z-index: -1;
     background-position: center;
     background-size: cover;
     border-radius: 0px 15px 15px 0px;
@@ -159,8 +161,10 @@ body{
     } }
   }
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
   .articleBlock{
+    background-color: $VertPrincipale1;
+    background-image: none;
     .postPreviewImage {
       display: none;
     }

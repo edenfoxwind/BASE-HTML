@@ -1,17 +1,15 @@
 # FoxWind
 GitHub du Projet Fil rouge - EDEN School 
 
-[30/04/2021] Léo - Notre Equipe
+[12/05/2021] Léo - Blog
 
 
 Dossiers :
 
-
-    /Blog/                    - Page du Blog
-    /Resources/               - Resources
-      | /Image/               - Images/SVG
-      | /Style/               - SCSS/CSS
-          | /Font/            - Polices d'écriture
-          | /Header/          - Style du Header
-          | /Footer/          - Style du Footer
-          | /Blog/            - Style du Blog
+    /resources/               - Resources
+      | /image/               - Images/SVG
+      | /style/               - SCSS/CSS
+          | /font/            - Polices d'écriture
+          | /header/          - Style du Header
+          | /footer/          - Style du Footer
+          | /blog/            - Style du Blog
